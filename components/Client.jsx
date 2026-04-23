@@ -8,12 +8,12 @@ import { motion } from 'framer-motion';
 import 'swiper/css';
 
 const clients = [
-  { name: 'Client 1', logo: 'https://cdn.brandfetch.io/google.com/fallback/lettermark?t=1' },
-  { name: 'Client 2', logo: 'https://cdn.brandfetch.io/amazon.com/fallback/lettermark?t=1' },
-  { name: 'Client 3', logo: 'https://cdn.brandfetch.io/meta.com/fallback/lettermark?t=1' },
-  { name: 'Client 4', logo: 'https://cdn.brandfetch.io/apple.com/fallback/lettermark?t=1' },
-  { name: 'Client 5', logo: 'https://cdn.brandfetch.io/microsoft.com/fallback/lettermark?t=1' },
-  { name: 'Client 6', logo: 'https://cdn.brandfetch.io/netflix.com/fallback/lettermark?t=1' },
+  { name: 'Client 1', logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQF2GKiBwNHwvg/company-logo_200_200/B4DZWlEzO3GcAI-/0/1742231254432/alten_india_logo?e=2147483647&v=beta&t=k1wOAABWpNewhhdoXvhn9jeHs7r7WRDKEA-b8mKAA5E' },
+  { name: 'Client 2', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKFj1o8qxUB9rCPSgrpyVp5wW3ldMniF8A&s' },
+  { name: 'Client 3', logo: 'https://media.licdn.com/dms/image/v2/C510BAQFcc-qYWBcMYw/company-logo_200_200/company-logo_200_200/0/1630594875453?e=2147483647&v=beta&t=ipWZJ8W6Xb44O4h-5j7iDp-PzWQKBcooelAQNNFdnk0' },
+  { name: 'Client 4', logo: 'https://media.licdn.com/dms/image/v2/C560BAQGLWAfpQ2mfdg/company-logo_200_200/company-logo_200_200/0/1671182609019/rideriver_logo?e=2147483647&v=beta&t=WLjOKXTQdz5exsHbJKoCzTZ-9qyirERlQL43aIR59KE' },
+  { name: 'Client 5', logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFccalKO4J4Xg/company-logo_200_200/company-logo_200_200/0/1633664191965?e=2147483647&v=beta&t=yaL3Nm9MVE-Q06hzbVyj8NJbjucaz2TPh3V7kgE84ZE' },
+  { name: 'Client 6', logo: 'https://media.licdn.com/dms/image/v2/D560BAQExV-c002IJ2w/company-logo_200_200/company-logo_200_200/0/1686819096389?e=2147483647&v=beta&t=U79tYrYsZA1KCh_XHG-cge39aVLYsgNYtBUGE90-rys' },{ name: 'Client 7', logo: 'https://static-asset.inc42.com/logo/apna.png' },{ name: 'Client 8', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' },
 ];
 
 const Clients = () => {

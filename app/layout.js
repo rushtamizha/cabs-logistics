@@ -3,14 +3,14 @@ import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// High-end Serif for Headlines (Business Standard Style)
+// Authoritative Serif for Headlines
 const serif = Playfair_Display({ 
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["700", "900"],
 });
 
-// Professional Sans for Body Text
+// Clean, Modern Sans for Professional Body Text
 const sans = Source_Sans_3({ 
   subsets: ["latin"],
   variable: "--font-sans",
@@ -19,53 +19,61 @@ const sans = Source_Sans_3({
 
 export const metadata = {
   title: {
-    default: "FleetMaster | #1 Corporate Cabs & Enterprise Logistics Tamil Nadu",
-    template: "%s | FleetMaster Logistics",
+    default: "GGV Cabs | Premier Corporate Mobility & Enterprise Logistics India",
+    template: "%s | GGV Cabs & Logistics",
+  },
+  icons : {
+    icon:"/logo.jpg",
+    apple:"/logo.jpg"
   },
   description:
-    "Tamil Nadu's premier enterprise logistics partner since 2020. Specializing in corporate cab services, employee transportation, and in-house fleet management across Chennai, Coimbatore, Hosur, and Bangalore.",
+    "Leading provider of employee transport and corporate logistics since 2020. Over 10,000+ daily trips across Chennai, Bangalore, Hosur, and Coimbatore. PAN India presence with a fleet of 200+ premium vehicles.",
   keywords: [
-    "Corporate Cabs Chennai",
-    "Employee Transportation Coimbatore",
-    "Logistics Services Hosur",
-    "Enterprise Mobility Bangalore",
-    "Staff Bus Service Tamil Nadu",
-    "Tier 3 City Logistics India",
+    "Corporate Cabs Tamil Nadu",
+    "Employee Transportation Services Bangalore",
+    "School Bus Logistics Hosur",
+    "Enterprise Fleet Management Chennai",
+    "GGV Cabs Krishnagiri",
+    "Premium Volvo Coach Rental India",
   ],
   icons: {
-    icon: "/logo.jpg", // Standard favicon
-    shortcut: "/logo.jpg",
-    apple: "/logo.jpg", // Recommended for premium look on iPhones
+    icon: "/favicon.ico",
   },
-  authors: [{ name: "Wepzite Digital" }],
-  creator: "Eswaran - Wepzite",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://fleetmaster.in",
-    title: "FleetMaster | Enterprise Logistics & Corporate Mobility",
-    description: "Secure, tech-enabled transportation for Corporate India. Operating in Chennai, Bangalore, and beyond.",
-    siteName: "FleetMaster",
+    url: "https://ggvcabs.co.in",
+    title: "GGV Cabs | Moving Corporate India Since 2020",
+    description: "5+ years of excellence in corporate mobility. Serving ALTEN, Crouzet, and Apnatime with a 200+ vehicle in-house fleet.",
+    siteName: "GGV Cabs",
   },
 };
 
 export default function RootLayout({ children }) {
+  // Advanced Schema for Rank #1 (LocalBusiness + Logistics)
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LogisticsStore",
-    "name": "FleetMaster Logistics",
-    "image": "https://fleetmaster.in/logo.png",
+    "@type": "LogisticsCompany",
+    "name": "GGV Cabs & Logistics",
+    "alternateName": "GGV Cabs",
+    "description": "Premium corporate transportation and employee mobility provider since 2020.",
+    "url": "https://ggvcabs.co.in",
+    "logo": "https://ggvcabs.co.in/logo.png",
+    "telephone": "+919943098822",
+    "email": "sales@ggvcabs.co.in",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Theni",
-      "addressRegion": "TN",
+      "streetAddress": "No- 1/78d, Puliyur, Pochampalli",
+      "addressLocality": "Krishnagiri",
+      "addressRegion": "Tamilnadu",
+      "postalCode": "635201",
       "addressCountry": "IN"
     },
-    "url": "https://fleetmaster.in",
-    "telephone": "+919876543210",
-    "priceRange": "$$",
-    "areaServed": ["Chennai", "Coimbatore", "Hosur", "Bangalore", "Theni"],
-    "founder": "Eswaran"
+    "founder": "Eswaran",
+    "foundingDate": "2020",
+    "areaServed": ["Chennai", "Coimbatore", "Hosur", "Bangalore", "Krishnagiri", "Theni"],
+    "numberOfEmployees": "40000", // Traveling per day metric
+    "knowsAbout": ["Employee Transportation", "Corporate Rentals", "Logistics", "Tier-3 Mobility"]
   };
 
   return (
@@ -76,10 +84,9 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      {/* Applying font variables to the body */}
       <body className={`${serif.variable} ${sans.variable} font-sans antialiased text-slate-900 bg-white`}>
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

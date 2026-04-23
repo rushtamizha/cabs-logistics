@@ -74,7 +74,7 @@ const About = () => {
               className="space-y-6 text-slate-600"
             >
               <p className="leading-relaxed font-medium">
-                With **28 years of excellence**, Cabs&logistics Smart Mobility Private
+                With **5 years of excellence**, Cabs&logistics Smart Mobility Private
                 Limited is a leading provider of integrated transportation
                 solutions for the corporate sector.
               </p>

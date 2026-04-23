@@ -5,32 +5,31 @@ import { Plus, Minus, MessageCircle } from "lucide-react";
 
 const faqs = [
   {
-    question: "How do I book a corporate cabs service?",
+    question: "What corporate transportation services do you offer?",
     answer:
-      "You can book through our enterprise portal or by contacting your dedicated account manager. For immediate requirements, our 24/7 dispatch desk is available via phone or email.",
+      "We provide a comprehensive suite of mobility solutions, including premium executive car rentals, 24/7 employee transportation, specialized school transit, and industrial logistics management tailored for enterprise needs.",
   },
   {
-    question: "What safety protocols are followed for your vehicles?",
+    question: "Which regions do you currently operate in?",
     answer:
-      "All vehicles undergo mandatory daily safety inspections and periodic deep-cleaning. Our drivers are professionally trained in defensive driving and follow strict corporate etiquette protocols.",
+      "Our primary strategic hubs are located in Chennai, Coimbatore, Hosur, and Bangalore. However, we specialize in pan-India connectivity, providing seamless services to Tier-3 cities based on specific corporate requirements.",
   },
   {
-    question: "Do you offer localized services across Tamil Nadu?",
+    question: "What makes your fleet management different from competitors?",
     answer:
-      "Yes, we provide comprehensive coverage across all major districts including Chennai, Coimbatore, Madurai, and Theni, specialized in both intercity and local corporate transit.",
+      "Unlike many aggregators, we maintain an extensive in-house fleet. This includes everything from high-end executive cars and coaches to luxury Volvo buses, allowing us to guarantee vehicle quality, safety, and 100% punctuality.",
   },
   {
-    question: "What is your policy on flight delays for airport transfers?",
+    question: "How do you handle logistics for Tier-3 or remote locations?",
     answer:
-      "We monitor flight statuses in real-time. Our drivers adjust pickup times automatically based on actual arrival times to ensure a seamless transition without additional waiting charges for standard delays.",
+      "Based on our headquarters in Bangalore, we have deep-rooted expertise in regional corridors. We leverage our in-house infrastructure to bridge the gap between major metros and remote industrial zones across India.",
   },
   {
-    question: "Can I set up a recurring monthly billing cycle?",
+    question: "Do you offer automated billing for corporate partners?",
     answer:
-      "Absolutely. We offer flexible corangeit periods and automated GST-compliant invoicing for our registeorange corporate partners to streamline your accounting process.",
+      "Yes. We provide flexible credit periods and automated, GST-compliant invoicing for our registered corporate partners to streamline accounting and ensure a transparent, professional experience.",
   },
 ];
-
 const FAQ = () => {
   const [activeIdx, setActiveIdx] = useState(0);
 

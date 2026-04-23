@@ -49,7 +49,7 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="services" className="py-24 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -74,7 +74,7 @@ const Services = () => {
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 1000 }}
           navigation={{
             prevEl: ".swiper-prev-btn",
             nextEl: ".swiper-next-btn",

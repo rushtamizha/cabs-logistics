@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 import { Trophy, Map, Users, Car, Globe } from 'lucide-react';
 
 const stats = [
-  { label: 'Years Experience', value: 28, suffix: '+', icon: <Trophy size={18} /> },
+  { label: 'Years Experience', value: 5, suffix: '+', icon: <Trophy size={18} /> },
   { label: 'Trips Per Day', value: 10000, suffix: '+', icon: <Map size={18} /> },
   { label: 'cabs Size', value: 2000, suffix: '+', icon: <Car size={18} /> },
   { label: 'Daily Commuters', value: 40000, suffix: '+', icon: <Users size={18} /> },

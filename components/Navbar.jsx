@@ -121,7 +121,7 @@ const Navbar = () => {
             <div className="h-10 w-10 overflow-hidden rounded-xl   transition-all duration-300 group-hover:scale-110">
               <img
                 src="/logo.jpg"
-                alt="Wepzite Digital Logo"
+                alt="ggv cabs & logistics"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -260,7 +260,7 @@ const Navbar = () => {
                   </div>
 
                   {/* Secondary Grid */}
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 gap-3 hidden">
                     <MobileBento
                       href="/journey"
                       label="journey"
