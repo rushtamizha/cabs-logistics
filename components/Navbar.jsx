@@ -75,30 +75,30 @@ const Navbar = () => {
   ];
 
   const logistics = [
-    {
-      name: "Freight Forwarding",
-      desc: "Global transport",
-      icon: <Truck size={20} />,
-      link: "logistics",
-    },
-    {
-      name: "Warehousing",
-      desc: "Secure storage",
-      icon: <Warehouse size={20} />,
-      link: "logistics",
-    },
+    // {
+    //   name: "Freight Forwarding",
+    //   desc: "Global transport",
+    //   icon: <Truck size={20} />,
+    //   link: "logistics",
+    // },
+    // {
+    //   name: "Warehousing",
+    //   desc: "Secure storage",
+    //   icon: <Warehouse size={20} />,
+    //   link: "logistics",
+    // },
     {
       name: "Last-Mile Delivery",
       desc: "Local logistics",
       icon: <Package size={20} />,
       link: "logistics",
     },
-    {
-      name: "Corporate Supply",
-      desc: "B2B solutions",
-      icon: <ShieldCheck size={20} />,
-      link: "logistics",
-    },
+    // {
+    //   name: "Corporate Supply",
+    //   desc: "B2B solutions",
+    //   icon: <ShieldCheck size={20} />,
+    //   link: "logistics",
+    // },
   ];
 
   return (

@@ -16,22 +16,22 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 
 const logisticsSolutions = [
-  {
-    title: "Freight Forwarding",
-    subtitle: "Global Transport",
-    desc: "Seamless air, sea, and land freight solutions. We handle complex customs clearances and international documentation for your global cargo.",
-    icon: <Globe size={24} />,
-    image: "https://arrowshipping.in/images/services/freight-forwarding.webp",
-    features: ["Customs Brokerage", "Real-time Tracking", "Multi-modal Paths"]
-  },
-  {
-    title: "Smart Warehousing",
-    subtitle: "Secure Storage",
-    desc: "Tech-enabled storage solutions with real-time inventory management. Our facilities are optimized for safety and rapid distribution.",
-    icon: <Warehouse size={24} />,
-    image: "https://www.b2eautomation.com/content/warehouse-box-moving-robots.png",
-    features: ["Climate Control", "WMS Integration", "24/7 Surveillance"]
-  },
+  // {
+  //   title: "Freight Forwarding",
+  //   subtitle: "Global Transport",
+  //   desc: "Seamless air, sea, and land freight solutions. We handle complex customs clearances and international documentation for your global cargo.",
+  //   icon: <Globe size={24} />,
+  //   image: "https://arrowshipping.in/images/services/freight-forwarding.webp",
+  //   features: ["Customs Brokerage", "Real-time Tracking", "Multi-modal Paths"]
+  // },
+  // {
+  //   title: "Smart Warehousing",
+  //   subtitle: "Secure Storage",
+  //   desc: "Tech-enabled storage solutions with real-time inventory management. Our facilities are optimized for safety and rapid distribution.",
+  //   icon: <Warehouse size={24} />,
+  //   image: "https://www.b2eautomation.com/content/warehouse-box-moving-robots.png",
+  //   features: ["Climate Control", "WMS Integration", "24/7 Surveillance"]
+  // },
   {
     title: "Last-Mile Delivery",
     subtitle: "Local Logistics",
@@ -40,14 +40,14 @@ const logisticsSolutions = [
     image: "https://www.sarvamlogistics.com/images/last-mile-rural-india.webp",
     features: ["Route Optimization", "Proof of Delivery", "Same-day Service"]
   },
-  {
-    title: "Corporate Supply",
-    subtitle: "B2B Solutions",
-    desc: "End-to-end supply chain management for large-scale enterprises. We optimize your procurement and distribution cycles.",
-    icon: <BarChart3 size={24} />,
-    image: "https://simplisales.com/_next/image?url=https%3A%2F%2Fblog.simplisales.io%2Fwp-content%2Fuploads%2F2024%2F12%2Fblog-What-is-B2B-Supply-Chain-Management-SCM_%403x-scaled.webp&w=3840&q=75",
-    features: ["Procurement Support", "Vendor Management", "Cost orangeuction"]
-  }
+  // {
+  //   title: "Corporate Supply",
+  //   subtitle: "B2B Solutions",
+  //   desc: "End-to-end supply chain management for large-scale enterprises. We optimize your procurement and distribution cycles.",
+  //   icon: <BarChart3 size={24} />,
+  //   image: "https://simplisales.com/_next/image?url=https%3A%2F%2Fblog.simplisales.io%2Fwp-content%2Fuploads%2F2024%2F12%2Fblog-What-is-B2B-Supply-Chain-Management-SCM_%403x-scaled.webp&w=3840&q=75",
+  //   features: ["Procurement Support", "Vendor Management", "Cost orangeuction"]
+  // }
 ];
 
 const LogisticsPage = () => {

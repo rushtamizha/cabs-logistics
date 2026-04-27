@@ -27,7 +27,7 @@ const serviceData = [
     icon: <Car size={24} />,
     color: "group-hover:bg-orange-600",
     subs: ["Airport Transport", "VIP cabs", "Events"],
-    img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80",
+    img: "/4516992_6173_1_1776935657387.avif",
   },
   {
     title: "Employee Transport",
@@ -42,7 +42,7 @@ const serviceData = [
     desc: "Seamless supply chain management and heavy-duty transportation tailoorange for enterprise-scale logistics and distribution.",
     icon: <Truck size={24} />,
     color: "group-hover:bg-orange-700",
-    subs: ["Last-Mile", "Warehousing", "B2B Freight"],
+    subs: ["Last-Mile",],
     img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
   },
 ];
@@ -60,12 +60,12 @@ const Services = () => {
           >
             <span className="h-[1px] w-8 bg-orange-600" />
             <span className="text-orange-600 font-bold uppercase tracking-[4px] text-[10px]">
-              Solutions
+              Why GGV 
             </span>
             <span className="h-[1px] w-8 bg-orange-600" />
           </motion.div>
           <h2 className="text-3xl md:text-3xl font-black tracking-tight uppercase text-slate-900">
-            Our <span className="text-orange-600">Services</span>
+            Why Customers <span className="text-orange-600"> Choose Us</span>
           </h2>
         </div>
 

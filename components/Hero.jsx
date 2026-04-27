@@ -12,14 +12,20 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
 const slides = [
-  {
-    image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80',
-    title: ["Enterprise", "Logistics"],
-    subtitle: 'Streamlining Global Supply Chains with precision and integrity.',
-    accent: 'Fast. Secure. Reliable.'
-  },
+  // {
+  //   image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80',
+  //   title: ["Enterprise", "Logistics"],
+  //   subtitle: 'Streamlining Global Supply Chains with precision and integrity.',
+  //   accent: 'Fast. Secure. Reliable.'
+  // },
     {
-    image: 'https://omsaitravelshubli.in/images/hero.png',
+    image: '/d0c7bb52-1e30-49f0-931c-de6f656d3c18.jpg',
+    title: ["Premium", "cabs"],
+    subtitle: 'Luxury travel solutions for corporate leaders and executive teams.',
+    accent: 'Comfort Beyond Boundaries.'
+  },
+  {
+    image: '/dc93600e-ba06-4e0e-a1df-1e0bfb88488a.jpg',
     title: ["Premium", "cabs"],
     subtitle: 'Luxury travel solutions for corporate leaders and executive teams.',
     accent: 'Comfort Beyond Boundaries.'

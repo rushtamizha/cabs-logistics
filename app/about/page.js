@@ -26,12 +26,13 @@ export default function AboutPage() {
             <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase leading-[0.9] mb-8">
               Moving <br />
               <span className="text-orange-500">Corporate India</span> <br />
-              Since 1998.
+              Since 2020.
             </h1>
             <p className="text-slate-400 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
-              From our roots in Tamil Nadu to a pan-India network, we combine 
-              two decades of logistics expertise with next-gen automation to 
-              orangeefine employee mobility.
+              Moving
+Corporate India
+Since 2020
+From our roots in Tamil Nadu to a pan-India network, we combine two.
             </p>
           </div>
         </div>

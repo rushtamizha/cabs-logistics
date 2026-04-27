@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 // Authoritative Serif for Headlines
 const serif = Playfair_Display({ 
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--",
   weight: ["700", "900"],
 });
 

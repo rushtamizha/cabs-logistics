@@ -5,7 +5,8 @@ import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Milestones from "@/components/Milestones";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <About/>
       <Cars/>
       <Services/>
-      <Testimonials/>
+      <WhyChooseUs/>
       <FAQ/>
     </div>
   );

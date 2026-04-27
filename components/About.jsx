@@ -20,7 +20,7 @@ const About = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow">
               <img
-                src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80"
+                src="/dc93600e-ba06-4e0e-a1df-1e0bfb88488a.jpg"
                 alt="Cabs&logistics cabs"
                 className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -109,7 +109,7 @@ const About = () => {
 };
 
 const InfoChip = ({ icon, text }) => (
-  <div className="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:shadow-md transition-all">
+  <div className="flex items-center gap-3 p-3 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white  transition-all">
     <div className="text-orange-600 group-hover:scale-110 transition-transform">
       {icon}
     </div>
