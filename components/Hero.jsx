@@ -25,7 +25,7 @@ const slides = [
     accent: 'Safe. Reliable. Pan-India.'
   },
   {
-    image: 'https://www.wticabs.com:3001/global/app/v1/aws/getImage/blogimages/1773990703146_Top_Cities_in_India_for_Employee_Transportation_Services.jpg',
+    image: 'https://hurryupcabs.com/assets/top-cities/Untitled%20design%20-%202025-09-04T165139.692.webp',
     title: ["Executive", "Cabs"],
     subtitle: 'Showroom maintained luxury sedans for VIP events and airport transfers.',
     accent: 'Showroom Standard Fleet'
