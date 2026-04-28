@@ -4,11 +4,17 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const categories = [
-  { id: 'ev', name: 'EV', title: 'Electric Vehicles', description: 'Eco-friendly and sustainable mobility solutions for the modern enterprise. Our EV fleet combines silent comfort with zero-emission performance.', image: '/cars/1.png' },
-  { id: 'standard', name: 'Standard', title: 'Standard Sedan', description: 'Reliable and cost-effective daily commutes. Perfect for individual staff transportation and routine city transit.', image: '/cars/2.png' },
-  { id: 'premium', name: 'Premium', title: 'Premium Sedan', description: 'Elevated comfort for mid-level management and client pickups. Feature-rich interiors for a productive journey.', image: '/cars/3.png' },
-  { id: 'muv', name: 'MUV', title: 'Multi-Utility Vehicle', description: 'Spacious and versatile transportation for groups and families. Ideal for team outings, airport pickups with luggage, and group travel.', image: '/cars/4.png' },
-  { id: 'luxury', name: 'Luxury', title: 'Luxury Segment', description: 'Top-tier executive travel. Experience the pinnacle of comfort and prestige for senior leadership and high-profile guests.', image: '/cars/5.png' }
+  { id: 'ev', name: 'EV', title: 'Electric Vehicles', description: 'Eco-friendly and sustainable mobility solutions for the modern enterprise. Our EV fleet combines silent comfort with zero-emission performance.', image: 'https://imgd.aeplcdn.com/1920x1080/n/cw/ec/174553/carens-clavis-ev-exterior-right-front-three-quarter-4.png?isig=0&q=80&q=80' },
+
+  { id: 'standard', name: 'Standard', title: 'Standard Sedan', description: 'Reliable and cost-effective daily commutes. Perfect for individual staff transportation and routine city transit.', image: 'https://www.nicepng.com/png/detail/258-2589513_new-swift-dzire-2018.png' },
+
+  { id: 'premium', name: 'Premium', title: 'Premium Sedan', description: 'Elevated comfort for mid-level management and client pickups. Feature-rich interiors for a productive journey.', image: 'https://www.varunmaruti.com/uploads/products/colors/ciaz-pearl-metallic-dignity-brown-and-black.png' },
+
+  { id: 'muv', name: 'MUV', title: 'Multi-Utility Vehicle', description: 'Spacious and versatile transportation for groups and families. Ideal for team outings, airport pickups with luggage, and group travel.', image: 'https://imgd.aeplcdn.com/642x336/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-3.png?isig=0&q=80' },
+
+  { id: 'luxury', name: 'Luxury', title: 'Luxury Segment', description: 'Top-tier executive travel. Experience the pinnacle of comfort and prestige for senior leadership and high-profile guests.', image: 'https://images.91wheels.com/assets/c_images/gallery/toyota/vellfire/toyota-vellfire-3-1767848275.png?w=850&q=40' },
+
+   { id: 'buses', name: 'Buses', title: 'Buses Segment', description: 'Top-tier executive travel. Experience the pinnacle of comfort and prestige for senior leadership and high-profile guests.', image: 'https://www.busrentalchennai.com/assets/image/bg/102.png' }
 ];
 
 const CarCategories = () => {

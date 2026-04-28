@@ -40,6 +40,34 @@ const clients = [
     name: 'Vijay & Co', 
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' // Elegant fallback for local firms
   },
+  { 
+    name: 'SRC', 
+    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQGoAYacnaiikg/company-logo_200_200/company-logo_200_200/0/1683474314008?e=2147483647&v=beta&t=LKQdda9Jo6CFztHKuzFYClfsRmB8nBrrwxHoWCQQeMU' // Elegant fallback for local firms
+  },
+   { 
+    name: 'TVS', 
+    logo: 'https://www.logo.wine/a/logo/TVS_Motor_Company/TVS_Motor_Company-Logo.wine.svg' // Elegant fallback for local firms
+  },
+  { 
+    name: 'Techno plast', 
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZeKVi4PLf-YHTUoExTMvqq_H0jWr_bXsQA&s' // Elegant fallback for local firms
+  },
+  { 
+    name: 'Kaynes - Pochampalli', 
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmRCGYN84gqKpyNBLi584ILijI3Auuukq4g&s' // Elegant fallback for local firms
+  },
+  { 
+    name: 'Refex mobility limited', 
+    logo: 'https://refexmobility.com/wp-content/uploads/2025/07/Logo-1.png' // Elegant fallback for local firms
+  },
+   { 
+    name: 'Fortuner hotel', 
+    logo: 'https://hotelfortuner.in/wp-content/uploads/2023/04/cropped-Hotel_Fortuner_Logo-removebg-preview-1-150x150.png' // Elegant fallback for local firms
+  },
+   { 
+    name: 'LA Classic hotel', 
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIruze_jZt5C9lFG8McKmOroi4878Bbb4SSw&s' // Elegant fallback for local firms
+  },
 ];
 const Clients = () => {
   return (

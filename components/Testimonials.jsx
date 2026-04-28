@@ -9,88 +9,52 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: "Bala",
+    name: "Bala Raja",
     role: "Event Organiser",
     company: "ALERT Being Awards",
-    content: "On behalf of our entire team, I extend my deepest gratitude for your generous sponsorship and unwavering support in making the ALERT BEING AWARDS – 8th Edition a seamless and successful event.",
-    initial: "A"
-  },
-  {
-    name: "Wellsfargo Bangalore",
-    role: "Transport Desk",
-    company: "Wellsfargo",
-    content: "We would like to extend sincere appreciation to your team and drivers for the exceptional support provided during the challenges posed by heavy traffic and rains in the city.",
-    initial: "W"
-  },
-  {
-    name: "Walmart Admin Team",
-    role: "Admin Team",
-    company: "Walmart",
-    content: "Thanks for your wonderful support on arranging vehicles for BCP in CBE office due to heavy rainfall in Chennai city. Appreciate all your efforts and hard work for helping us.",
-    initial: "W"
+    content: "Big thanks to the GGV team! Their support for our 8th Edition awards was seamless. The cars were clean and the drivers were very polite. Highly recommended for events.",
+    initial: "B",
+    rating: 5
   },
   {
     name: "Sandeep Verma",
     role: "Facility Manager",
     company: "Tech Mahindra",
-    content: "GGV has been our go-to partner for employee transport. Their 24/7 support and GPS-tracked vehicles have significantly improved our late-night shift safety compliance.",
-    initial: "T"
-  },
-  {
-    name: "Priya Raghavan",
-    role: "Operations Head",
-    company: "Global Logistics Corp",
-    content: "The transition to GGV for our containerized freight was smooth. Their professional approach to logistics and timely industrial deliveries is highly commendable.",
-    initial: "G"
+    content: "Been using GGV for our night shift employees. The GPS tracking gives us peace of mind regarding safety. 24/7 support is actually reachable and helpful.",
+    initial: "S",
+    rating: 5
   },
   {
     name: "Karthik Raja",
-    role: "Travel Coordinator",
-    company: "Infosys Bangalore",
-    content: "Exceptional service for our VIP client pickups. The premium sedans are always spotless, and the chauffeurs are extremely professional and well-versed with city routes.",
-    initial: "I"
+    role: "Travel Lead",
+    company: "Infosys",
+    content: "Excellent service for VIP pickups. The premium sedans are spotless and the chauffeurs know the city routes like the back of their hand. Very professional.",
+    initial: "K",
+    rating: 5
   },
   {
-    name: "Meera Deshmukh",
-    role: "HR Director",
-    company: "Standard Chartered",
-    content: "Reliability is key for our executive travel, and GGV never fails. Their spot rental service is quick, and the billing process is transparent and corporate-friendly.",
-    initial: "S"
-  },
-  {
-    name: "Arjun Reddy",
-    role: "Procurement Lead",
-    company: "Apollo Hospitals",
-    content: "During the recent logistics surge, GGV provided flexible container transport solutions that kept our supply chain moving. A truly dependable logistics partner.",
-    initial: "A"
+    name: "Priya Raghavan",
+    role: "Operations",
+    company: "Global Logistics",
+    content: "Switched to GGV for our container freight. The transition was smooth and their industrial delivery timing is spot on. Very dependable logistics partner.",
+    initial: "P",
+    rating: 4
   },
   {
     name: "Siddharth Nair",
-    role: "Event Director",
+    role: "Director",
     company: "Wedding Tales",
-    content: "Managing a 50-car bridal fleet is no small task. GGV handled our high-profile wedding event with zero delays. The coordination was absolutely perfect.",
-    initial: "W"
-  },
-  {
-    name: "Anjali Gupta",
-    role: "Admin Manager",
-    company: "HCL Technologies",
-    content: "Their commitment to safety audits and vehicle maintenance stands out. GGV's employee shuttle service has the highest feedback rating from our staff.",
-    initial: "H"
-  },
-  {
-    name: "Vikram Seth",
-    role: "Regional Head",
-    company: "Amazon Logistics",
-    content: "GGV's customized logistics plans helped us manage peak season deliveries effectively. Their pan-India network is a huge asset for our distribution.",
-    initial: "A"
+    content: "Handled a 50-car fleet for a high-profile wedding without a single delay. The coordination was perfect. Made my job as an organizer much easier!",
+    initial: "S",
+    rating: 5
   },
   {
     name: "Rajesh Kannan",
-    role: "Operations Manager",
-    company: "Cognizant Chennai",
-    content: "Excellent support during emergency BCP situations. GGV's ability to mobilize vehicles at short notice during heavy rains saved our project deadlines.",
-    initial: "C"
+    role: "Ops Manager",
+    company: "Cognizant",
+    content: "Amazing support during the heavy rains in Chennai. They mobilized vehicles at short notice for our BCP requirements. Saved us a lot of trouble.",
+    initial: "R",
+    rating: 5
   }
 ];
 
