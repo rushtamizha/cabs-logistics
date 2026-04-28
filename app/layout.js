@@ -3,77 +3,105 @@ import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Authoritative Serif for Headlines
 const serif = Playfair_Display({ 
   subsets: ["latin"],
-  variable: "--",
+  variable: "--font-serif",
   weight: ["700", "900"],
 });
 
-// Clean, Modern Sans for Professional Body Text
 const sans = Source_Sans_3({ 
   subsets: ["latin"],
-  variable: "--",
+  variable: "--font-sans",
   weight: ["400", "500", "600"],
 });
 
 export const metadata = {
   title: {
-    default: "GGV Cabs | Premier Corporate Mobility & Enterprise Logistics India",
+    default: "GGV Cabs & Logistics | Driving Success Together",
     template: "%s | GGV Cabs & Logistics",
   },
-  icons : {
-    icon:"/logo.jpg",
-    apple:"/logo.jpg"
-  },
   description:
-    "Leading provider of employee transport and corporate logistics since 2020. Over 10,000+ daily trips across Chennai, Bangalore, Hosur, and Coimbatore. PAN India presence with a fleet of 200+ premium vehicles.",
+    "Founded in 2022 with 15+ years of expertise. Premier provider of Corporate Car Rentals, Employee Transportation (ETS), and Containerized Logistics across India.",
   keywords: [
-    "Corporate Cabs Tamil Nadu",
-    "Employee Transportation Services Bangalore",
-    "School Bus Logistics Hosur",
-    "Enterprise Fleet Management Chennai",
+    "Corporate Car Rentals India",
+    "Employee Transportation Service Bangalore",
+    "Logistics and Container Transport Tamil Nadu",
+    "Premium SUV Rental for VIPs",
     "GGV Cabs Krishnagiri",
-    "Premium Volvo Coach Rental India",
+    "Industrial Freight Solutions Chennai",
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://ggvcabs.co.in",
-    title: "GGV Cabs | Moving Corporate India Since 2020",
-    description: "5+ years of excellence in corporate mobility. Serving ALTEN, Crouzet, and Apnatime with a 200+ vehicle in-house fleet.",
-    siteName: "GGV Cabs",
+    title: "GGV Cabs & Logistics | Premium Mobility & Logistics Solutions",
+    description: "200+ fleet. 15+ years expertise. Seamless corporate travel and industrial logistics across Bangalore, Chennai, and Pan-India.",
+    siteName: "GGV Cabs & Logistics",
   },
 };
 
 export default function RootLayout({ children }) {
-  // Advanced Schema for Rank #1 (LocalBusiness + Logistics)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LogisticsCompany",
     "name": "GGV Cabs & Logistics",
     "alternateName": "GGV Cabs",
-    "description": "Premium corporate transportation and employee mobility provider since 2020.",
+    "description": "Seamless mobility and logistics solutions across India. Specializing in premium car rentals, employee transportation, and industrial container logistics.",
     "url": "https://ggvcabs.co.in",
-    "logo": "https://ggvcabs.co.in/logo.png",
+    "logo": "https://ggvcabs.co.in/logo.jpg",
     "telephone": "+919943098822",
     "email": "sales@ggvcabs.co.in",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "No- 1/78d, Puliyur, Pochampalli",
-      "addressLocality": "Krishnagiri",
-      "addressRegion": "Tamilnadu",
-      "postalCode": "635201",
-      "addressCountry": "IN"
-    },
-    "founder": "Eswaran",
-    "foundingDate": "2020",
-    "areaServed": ["Chennai", "Coimbatore", "Hosur", "Bangalore", "Krishnagiri", "Theni"],
-    "numberOfEmployees": "40000", // Traveling per day metric
-    "knowsAbout": ["Employee Transportation", "Corporate Rentals", "Logistics", "Tier-3 Mobility"]
+    "foundingDate": "2022",
+    "knowsAbout": [
+      "Premium Car Rentals",
+      "Employee Transportation Service",
+      "Logistics Solutions",
+      "Container Transport",
+      "Airport Transfers"
+    ],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "name": "Registered Office",
+        "streetAddress": "No-1/78D, Puliyur, Pochampalli",
+        "addressLocality": "Krishnagiri",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "635201",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Bangalore Office",
+        "streetAddress": "No-07, 7th Cross, CT Bed, Banashankari 2nd Stage",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560070",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Hosur Office",
+        "streetAddress": "No-22, Kothagondapalli, Royakottai Road, Hosur",
+        "addressLocality": "Krishnagiri",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "635109",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Chennai Office",
+        "streetAddress": "No-1/22, 2nd Floor, Mangadu Main Road, Kovur",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600128",
+        "addressCountry": "IN"
+      }
+    ],
+    "areaServed": ["Chennai", "Coimbatore", "Hosur", "Bangalore", "Krishnagiri", "Hyderabad", "Delhi"]
   };
 
   return (
@@ -84,7 +112,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${serif.variable} ${sans.variable}  antialiased text-slate-900 bg-white`}>
+      <body className={`${serif.variable} ${sans.variable} font-sans antialiased text-slate-900 bg-white`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
