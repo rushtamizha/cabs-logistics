@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   const pillars = [
     {
       id: "01",
-      title: "5+ of Experience",
+      title: "5+ years of  expertise",
       desc: "Since 2020, we have adapted to evolving enterprise needs, establishing GGV as a leader in corporate mobility.",
       icon: <Shield size={18} className="text-orange-600" />,
       img: "/why/01.avif",

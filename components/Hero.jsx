@@ -15,36 +15,29 @@ const slides = [
   {
     image: 'https://www.tripkartz.com/wp-content/themes/tripkartz-theme/assets/employee-transport-1.webp',
     title: ["Premium", "Mobility"],
-    subtitle: 'Luxury travel solutions for corporate leaders, 24/7 employee transportation, and premium event fleets.',
+    subtitle: 'Luxury travel solutions for corporate leaders and 24/7 employee transportation.',
     accent: '5+ Years of Industry Expertise'
   },
   {
     image: 'https://www.tripkartz.com/wp-content/themes/tripkartz-theme/assets/corporate-desktop-image.webp',
-    title: ["Premium", "Mobility"],
-    subtitle: 'Luxury travel solutions for corporate leaders, 24/7 employee transportation, and premium event fleets.',
-    accent: '5+ Years of Industry Expertise'
+    title: ["Container", "Logistics"],
+    subtitle: 'Safe and timely containerized freight solutions for industries across India.',
+    accent: 'Safe. Reliable. Pan-India.'
   },
   {
     image: 'https://www.wticabs.com:3001/global/app/v1/aws/getImage/blogimages/1773990703146_Top_Cities_in_India_for_Employee_Transportation_Services.jpg',
-    title: ["Premium", "Mobility"],
-    subtitle: 'Luxury travel solutions for corporate leaders, 24/7 employee transportation, and premium event fleets.',
-    accent: '5+ Years of Industry Expertise'
-  },
-  ,
-  {
-    image: 'https://www.wticabs.com:3001/global/app/v1/aws/getImage/blogimages/1768475608870_How_Employee_Transportation_Services_in_Hyderabad_Can_Boost_Productivity_&_Reduce_Attrition.jpg',
-    title: ["Premium", "Mobility"],
-    subtitle: 'Luxury travel solutions for corporate leaders, 24/7 employee transportation, and premium event fleets.',
-    accent: '5+ Years of Industry Expertise'
-  },
- 
+    title: ["Executive", "Cabs"],
+    subtitle: 'Showroom maintained luxury sedans for VIP events and airport transfers.',
+    accent: 'Showroom Standard Fleet'
+  }
 ];
 
 const Hero = () => {
   const WHATSAPP_NUMBER = "919943098822";
 
   return (
-    <section className="relative h-[100vh] w-full overflow-hidden bg-slate-900">
+    // Changed h-[100vh] to h-[60vh] for half-screen appearance
+    <section className="relative h-[65vh] md:h-[60vh] min-h-[500px] w-full overflow-hidden bg-slate-900">
       <Swiper
         modules={[Autoplay, EffectFade, Pagination]}
         effect="fade"
@@ -55,7 +48,7 @@ const Hero = () => {
         className="h-full w-full"
       >
         {slides.map((slide, index) => {
-          const waMessage = `Hello GGV! I'm interested in your ${slide.title.join(' ')} services. Can you share a quote?`;
+          const waMessage = `Hello GGV! I'm interested in your ${slide.title.join(' ')} services.`;
           const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
 
           return (
@@ -72,28 +65,28 @@ const Hero = () => {
                   alt={slide.title.join(' ')} 
                   className="h-full w-full object-cover"
                 />
-                {/* Optimized gradient for readability on both light/dark images */}
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-transparent" />
               </motion.div>
 
-              {/* Content */}
+              {/* Content - Adjusted padding for shorter height */}
               <div className="relative z-10 flex h-full items-center max-w-7xl mx-auto px-6 md:px-12">
-                <div className="max-w-4xl text-white pt-20">
+                <div className="max-w-4xl text-white pt-10">
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    className="flex items-center gap-3 mb-6"
+                    className="flex items-center gap-3 mb-4"
                   >
                     <span className="h-[2px] w-8 bg-orange-600" />
-                    <span className="text-orange-400  font-bold uppercase tracking-[4px] text-[10px]">
+                    <span className="text-orange-400 font-bold uppercase tracking-[4px] text-[10px]">
                       {slide.accent}
                     </span>
                   </motion.div>
 
                   <motion.h1 
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className=" text-5xl md:text-[90px] font-black tracking-tighter uppercase leading-[0.9] mb-8"
+                    // Slightly reduced font sizes for better fit in half-screen
+                    className="text-4xl md:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-6"
                   >
                     {slide.title[0]} <br />
                     <span className="text-orange-600 ">{slide.title[1]}</span>
@@ -102,7 +95,7 @@ const Hero = () => {
                   <motion.p 
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className=" text-base md:text-xl text-slate-300 mb-12 max-w-lg leading-relaxed border-l-2 border-orange-600/30 pl-6"
+                    className="text-sm md:text-lg text-slate-300 mb-8 max-w-lg leading-relaxed border-l-2 border-orange-600/30 pl-6"
                   >
                     {slide.subtitle}
                   </motion.p>
@@ -110,11 +103,11 @@ const Hero = () => {
                   <motion.div 
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="flex flex-col sm:flex-row gap-5"
+                    className="flex flex-col sm:flex-row gap-4"
                   >
                     <Link href="/contact" className="w-full sm:w-auto">
-                      <button className="w-full bg-orange-600 hover:bg-white hover:text-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl shadow-orange-900/20 flex items-center justify-center gap-3 transition-all active:scale-95 group">
-                        Book Service <Phone size={16} className="group-hover:rotate-12 transition-transform" />
+                      <button className="w-full bg-orange-600 hover:bg-white hover:text-slate-900 text-white px-8 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-xl flex items-center justify-center gap-3 transition-all active:scale-95 group">
+                        Book Service <Phone size={14} className="group-hover:rotate-12 transition-transform" />
                       </button>
                     </Link>
                     
@@ -122,10 +115,10 @@ const Hero = () => {
                       href={waLink}
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full sm:w-auto bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/20 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3 transition-all"
+                      className="w-full sm:w-auto bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-3 transition-all"
                     >
-                      <MessageCircle size={20} className="text-orange-400" /> 
-                      WhatsApp Us
+                      <MessageCircle size={18} className="text-orange-400" /> 
+                      WhatsApp
                     </a>
                   </motion.div>
                 </div>
@@ -135,15 +128,13 @@ const Hero = () => {
         })}
       </Swiper>
 
-      {/* Corporate Trust Indicators */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 hidden lg:flex items-center gap-10">
-        <HeroFeature icon={<ShieldCheck size={18}/>} title="Safety Audited" />
+      {/* Simplified Corporate Trust Indicators for smaller height */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden lg:flex items-center gap-8 bg-slate-950/20 backdrop-blur-sm p-4 rounded-2xl border border-white/5">
+        <HeroFeature icon={<ShieldCheck size={16}/>} title="Safety First" />
         <div className="h-4 w-px bg-white/10" />
-        <HeroFeature icon={<Globe size={18}/>} title="Pan-India Network" />
+        <HeroFeature icon={<Globe size={16}/>} title="Pan-India" />
         <div className="h-4 w-px bg-white/10" />
-        <HeroFeature icon={<Truck size={18}/>} title="200+ Fleet" />
-        <div className="h-4 w-px bg-white/10" />
-        <HeroFeature icon={<Zap size={18}/>} title="24/7 Support" />
+        <HeroFeature icon={<Truck size={16}/>} title="200+ Fleet" />
       </div>
 
       <style jsx global>{`
@@ -152,7 +143,7 @@ const Hero = () => {
           opacity: 0.3 !important;
         }
         .swiper-pagination-bullet-active {
-          background: #2563eb !important; /* orange-600 */
+          background: #2563eb !important;
           opacity: 1 !important;
         }
       `}</style>
@@ -161,11 +152,11 @@ const Hero = () => {
 };
 
 const HeroFeature = ({ icon, title }) => (
-  <div className="flex items-center gap-3 text-white/40 hover:text-white transition-colors group">
-    <div className="p-2 rounded-xl bg-white/5 border border-white/10 group-hover:bg-orange-600 group-hover:border-orange-600 transition-all">
+  <div className="flex items-center gap-3 text-white/50 hover:text-white transition-colors">
+    <div className="text-orange-500">
       {icon}
     </div>
-    <span className=" text-[9px] font-bold uppercase tracking-[3px]">{title}</span>
+    <span className="text-[8px] font-bold uppercase tracking-[2px]">{title}</span>
   </div>
 );
 

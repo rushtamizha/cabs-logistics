@@ -67,9 +67,7 @@ const Footer = () => {
               </h2>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md font-medium">
-              Over the 5+ of Experience Since 2020, we have consistently
-              understood and adapted to evolving customer needs, establishing
-              GGV as a leading provider of employee transport services.
+              GGV Cabs & Logistics delivers reliable, Pan-India corporate mobility solutions. From premium chauffeur-driven rentals to 24/7 employee transportation and airport transfers, we combine safety with 15+ years of industry expertise to ensure seamless business travel across all major Indian cities.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, idx) => (
