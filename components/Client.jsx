@@ -13,14 +13,6 @@ const clients = [
     logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQF2GKiBwNHwvg/company-logo_200_200/B4DZWlEzO3GcAI-/0/1742231254432/alten_india_logo?e=2147483647&v=beta&t=k1wOAABWpNewhhdoXvhn9jeHs7r7WRDKEA-b8mKAA5E' 
   },
   { 
-    name: 'Wells Fargo', 
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wells_Fargo_Logo_%282020%29.svg/250px-Wells_Fargo_Logo_%282020%29.svg.png' 
-  },
-  { 
-    name: 'Walmart', 
-    logo: 'https://www.vusion.com/wp-content/uploads/2024/12/Image-de-retombee-Site-Web-9-768x511.png.webp' 
-  },
-  { 
     name: 'Formula Corporate', 
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKFj1o8qxUB9rCPSgrpyVp5wW3ldMniF8A&s' // Placeholder for Formula 
   },
@@ -34,7 +26,7 @@ const clients = [
   },
   { 
     name: 'Crouzet Mechatronics', 
-    logo: 'https://logo.clearbit.com/crouzet.com' 
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzwOkJUlaElclVBpbZIha8JiBbVxeer34qDQ&s' 
   },
   { 
     name: 'ApnaTime Tech', 
@@ -42,19 +34,11 @@ const clients = [
   },
   { 
     name: 'Maxime Technologies', 
-    logo: 'https://logo.clearbit.com/maxime.io' 
-  },
-  { 
-    name: 'Alert Being', 
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' 
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFccalKO4J4Xg/company-logo_200_200/company-logo_200_200/0/1633664191965?e=2147483647&v=beta&t=yaL3Nm9MVE-Q06hzbVyj8NJbjucaz2TPh3V7kgE84ZE' 
   },
   { 
     name: 'Vijay & Co', 
-    logo: 'https://ui-avatars.com/api/?name=Vijay+Co&background=0f172a&color=fff&size=200' // Elegant fallback for local firms
-  },
-  { 
-    name: 'Corporate India', 
-    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFccalKO4J4Xg/company-logo_200_200/company-logo_200_200/0/1633664191965?e=2147483647&v=beta&t=yaL3Nm9MVE-Q06hzbVyj8NJbjucaz2TPh3V7kgE84ZE' 
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' // Elegant fallback for local firms
   },
 ];
 const Clients = () => {
