@@ -40,10 +40,6 @@ const clients = [
     name: 'Vijay & Co', 
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' // Elegant fallback for local firms
   },
-  { 
-    name: 'SRC', 
-    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQGoAYacnaiikg/company-logo_200_200/company-logo_200_200/0/1683474314008?e=2147483647&v=beta&t=LKQdda9Jo6CFztHKuzFYClfsRmB8nBrrwxHoWCQQeMU' // Elegant fallback for local firms
-  },
    { 
     name: 'TVS', 
     logo: 'https://www.logo.wine/a/logo/TVS_Motor_Company/TVS_Motor_Company-Logo.wine.svg' // Elegant fallback for local firms
