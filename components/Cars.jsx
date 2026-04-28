@@ -89,7 +89,7 @@ const CarCategories = () => {
               <h3 className=" text-3xl md:text-5xl font-black text-slate-900 mb-4 md:mb-6 uppercase tracking-tighter">
                 {activeTab.name}
               </h3>
-              <p className="font-sans text-slate-500 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0 ">
+              <p className=" text-slate-500 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0 ">
                 {activeTab.description}
               </p>
               <div className="mt-8">

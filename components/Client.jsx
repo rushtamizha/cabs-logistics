@@ -8,63 +8,71 @@ import { motion } from 'framer-motion';
 import 'swiper/css';
 
 const clients = [
-  { name: 'Client 1', logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQF2GKiBwNHwvg/company-logo_200_200/B4DZWlEzO3GcAI-/0/1742231254432/alten_india_logo?e=2147483647&v=beta&t=k1wOAABWpNewhhdoXvhn9jeHs7r7WRDKEA-b8mKAA5E' },
-  { name: 'Client 2', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKFj1o8qxUB9rCPSgrpyVp5wW3ldMniF8A&s' },
-  { name: 'Client 3', logo: 'https://media.licdn.com/dms/image/v2/C510BAQFcc-qYWBcMYw/company-logo_200_200/company-logo_200_200/0/1630594875453?e=2147483647&v=beta&t=ipWZJ8W6Xb44O4h-5j7iDp-PzWQKBcooelAQNNFdnk0' },
-  { name: 'Client 4', logo: 'https://media.licdn.com/dms/image/v2/C560BAQGLWAfpQ2mfdg/company-logo_200_200/company-logo_200_200/0/1671182609019/rideriver_logo?e=2147483647&v=beta&t=WLjOKXTQdz5exsHbJKoCzTZ-9qyirERlQL43aIR59KE' },
-  { name: 'Client 5', logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFccalKO4J4Xg/company-logo_200_200/company-logo_200_200/0/1633664191965?e=2147483647&v=beta&t=yaL3Nm9MVE-Q06hzbVyj8NJbjucaz2TPh3V7kgE84ZE' },
-  { name: 'Client 6', logo: 'https://media.licdn.com/dms/image/v2/D560BAQExV-c002IJ2w/company-logo_200_200/company-logo_200_200/0/1686819096389?e=2147483647&v=beta&t=U79tYrYsZA1KCh_XHG-cge39aVLYsgNYtBUGE90-rys' },{ name: 'Client 7', logo: 'https://static-asset.inc42.com/logo/apna.png' },{ name: 'Client 8', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' },
+  { name: 'Alten India', logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQF2GKiBwNHwvg/company-logo_200_200/B4DZWlEzO3GcAI-/0/1742231254432/alten_india_logo?e=2147483647&v=beta&t=k1wOAABWpNewhhdoXvhn9jeHs7r7WRDKEA-b8mKAA5E' },
+  { name: 'Wells Fargo', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTKFj1o8qxUB9rCPSgrpyVp5wW3ldMniF8A&s' },
+  { name: 'Walmart', logo: 'https://media.licdn.com/dms/image/v2/C510BAQFcc-qYWBcMYw/company-logo_200_200/company-logo_200_200/0/1630594875453?e=2147483647&v=beta&t=ipWZJ8W6Xb44O4h-5j7iDp-PzWQKBcooelAQNNFdnk0' },
+  { name: 'River', logo: 'https://media.licdn.com/dms/image/v2/C560BAQGLWAfpQ2mfdg/company-logo_200_200/company-logo_200_200/0/1671182609019/rideriver_logo?e=2147483647&v=beta&t=WLjOKXTQdz5exsHbJKoCzTZ-9qyirERlQL43aIR59KE' },
+  { name: 'Corporate India', logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFccalKO4J4Xg/company-logo_200_200/company-logo_200_200/0/1633664191965?e=2147483647&v=beta&t=yaL3Nm9MVE-Q06hzbVyj8NJbjucaz2TPh3V7kgE84ZE' },
+  { name: 'Apna', logo: 'https://static-asset.inc42.com/logo/apna.png' },
+  { name: 'Alert Being', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_jVFjYJqT5zFvfJAaB35islVPPA9JAi-aw&s' },
 ];
 
 const Clients = () => {
   return (
-    <section className="py-16 bg-white border-y border-slate-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col items-center mb-10">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        {/* Header */}
+        <div className="flex flex-col items-center mb-16">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="flex items-center gap-2 mb-2"
+            className="flex items-center gap-3 mb-4"
           >
-            <span className="h-[1px] w-6 bg-orange-600" />
-            <span className="text-orange-600 font-bold uppercase tracking-[3px] text-[10px]">Trusted By</span>
-            <span className="h-[1px] w-6 bg-orange-600" />
+            <span className="h-[2px] w-8 bg-orange-600" />
+            <span className="text-orange-600 font-sans font-bold uppercase tracking-[4px] text-[10px]">Strategic Partners</span>
+            <span className="h-[2px] w-8 bg-orange-600" />
           </motion.div>
-          <h2 className="text-3xl font-black  tracking-tighter uppercase text-slate-900 leading-none">
-            Our <span className="text-orange-600">Partners</span>
+          <h2 className=" text-3xl md:text-4xl font-black tracking-tighter uppercase text-slate-900 leading-none">
+            Trusted by <span className="text-orange-600 ">Industry Leaders</span>
           </h2>
         </div>
 
         <div className="relative">
-          {/* Gradient Overlays for smooth fade-in/out effect */}
-          <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
+          {/* Edge Gradients */}
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
 
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={40}
-            slidesPerView={5}
+            spaceBetween={50}
+            slidesPerView={2}
             loop={true}
-            speed={4000} // Speed for linear movement
+            speed={5000}
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
             }}
             breakpoints={{
               640: { slidesPerView: 3 },
-              768: { slidesPerView: 4 },
-              1024: { slidesPerView: 5 },
+              1024: { slidesPerView: 4 },
+              1280: { slidesPerView: 5 },
             }}
-            className="flex items-center !ease-linear"
+            className="flex items-center !ease-linear py-4"
           >
             {clients.map((client, index) => (
-              <SwiperSlide key={index} className="flex justify-center items-center py-4">
-                <div className="group relative grayscale hover:grayscale-0 transition-all duration-500 cursor-pointer">
+              <SwiperSlide key={index} className="flex justify-center items-center">
+                <div className="group flex items-center flex-col  gap-4   transition-all duration-500 cursor-default">
+                  {/* Logo */}
                   <img 
                     src={client.logo} 
                     alt={client.name} 
-                    className="h-10 md:h-12 w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity"
+                    className="h-8 md:h-10 w-auto object-contain  "
                   />
+                  {/* Name */}
+                  <span className=" text-sm font-black uppercase tracking-tighter text-slate-500  transition-colors whitespace-nowrap">
+                    {client.name}
+                  </span>
                 </div>
               </SwiperSlide>
             ))}
@@ -73,7 +81,7 @@ const Clients = () => {
       </div>
 
       <style jsx global>{`
-        /* Forces Swiper to move at a constant linear speed without easing */
+        /* Continuous marquee effect */
         .swiper-wrapper {
           transition-timing-function: linear !important;
         }

@@ -7,19 +7,16 @@ import {
   Menu,
   X,
   Car,
-  Bus,
+  Users,
   Heart,
   Plane,
   Truck,
-  Warehouse,
   Package,
   ShieldCheck,
-  Users,
-  Image as ImageIcon,
-  BookOpen,
   MapPin,
   Phone,
-  Zap,
+  Briefcase,
+  Globe,
 } from "lucide-react";
 
 const Navbar = () => {
@@ -41,64 +38,59 @@ const Navbar = () => {
     else document.body.style.overflow = "unset";
   }, [mobileOpen]);
 
-  const handleContact = () => {
-    const text =
-      "Hello Cabs&logistics, I'd like to enquire about your transport services.";
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
-  };
-
+  // Updated based on your specific service list
   const services = [
     {
-      name: "Premium Car Rental",
-      desc: "Luxury sedans",
+      name: "Premium Car Rentals",
+      desc: "Luxury & Executive VIP fleets",
       icon: <Car size={20} />,
-      link: "services",
+      link: "services#premium",
     },
     {
-      name: "Bus & Shuttle",
-      desc: "Group travel",
-      icon: <Bus size={20} />,
-      link: "services",
+      name: "Employee Transport",
+      desc: "24/7 Corporate commuting",
+      icon: <Users size={20} />,
+      link: "services#corporate",
     },
     {
-      name: "Wedding & Events",
-      desc: "Special cabs",
+      name: "Event & Wedding",
+      desc: "Tailor-made bridal fleets",
       icon: <Heart size={20} />,
-      link: "services",
+      link: "services#events",
     },
     {
-      name: "Airport & Outstation",
-      desc: "Reliable travel",
+      name: "Airport & Spot Rental",
+      desc: "Punctual professional travel",
       icon: <Plane size={20} />,
-      link: "services",
+      link: "services#airport",
     },
   ];
 
   const logistics = [
-    // {
-    //   name: "Freight Forwarding",
-    //   desc: "Global transport",
-    //   icon: <Truck size={20} />,
-    //   link: "logistics",
-    // },
-    // {
-    //   name: "Warehousing",
-    //   desc: "Secure storage",
-    //   icon: <Warehouse size={20} />,
-    //   link: "logistics",
-    // },
     {
-      name: "Last-Mile Delivery",
-      desc: "Local logistics",
+      name: "Freight & Container",
+      desc: "Industrial safe solutions",
+      icon: <Truck size={20} />,
+      link: "logistics",
+    },
+    {
+      name: "Customized Plans",
+      desc: "Flexible client requirements",
       icon: <Package size={20} />,
       link: "logistics",
     },
-    // {
-    //   name: "Corporate Supply",
-    //   desc: "B2B solutions",
-    //   icon: <ShieldCheck size={20} />,
-    //   link: "logistics",
-    // },
+    {
+      name: "Safe Logistics",
+      desc: "Reliable corporate freight",
+      icon: <ShieldCheck size={20} />,
+      link: "logistics",
+    },
+    {
+      name: "PAN India Network",
+      desc: "Across Tier-3 cities",
+      icon: <Globe size={20} />,
+      link: "logistics",
+    },
   ];
 
   return (
@@ -115,18 +107,15 @@ const Navbar = () => {
               : "bg-white/90 backdrop-blur-md border-white shadow-sm"
           }`}
         >
-          {/* Logo - Updated to Cabs&logistics */}
-          <a href="/" className="flex items-center gap-3 group cursor-pointer">
-            {/* Logo Image from Public Folder */}
-            <div className="h-10 w-10 overflow-hidden rounded-xl   transition-all duration-300 group-hover:scale-110">
+          {/* Logo Section */}
+          <Link href="/" className="flex items-center gap-3 group cursor-pointer">
+            <div className="h-10 w-10 overflow-hidden rounded-xl transition-all duration-300 group-hover:scale-110 shadow-sm border border-slate-100">
               <img
                 src="/logo.jpg"
-                alt="ggv cabs & logistics"
+                alt="GGV Cabs & Logistics"
                 className="h-full w-full object-cover"
               />
             </div>
-
-            {/* Brand Name */}
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-tighter uppercase text-slate-900 leading-[0.8]">
                 GG<span className="text-orange-600">V</span>
@@ -135,7 +124,7 @@ const Navbar = () => {
                 Cabs & Logistics
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
@@ -150,7 +139,7 @@ const Navbar = () => {
               <button
                 className={`flex items-center gap-1 px-4 py-2 text-sm font-bold transition-all ${activeMenu === "services" ? "text-orange-600" : "text-slate-600"}`}
               >
-                Services{" "}
+                Travel Solutions
                 <ChevronDown
                   size={14}
                   className={`transition-transform ${activeMenu === "services" ? "rotate-180" : ""}`}
@@ -169,7 +158,7 @@ const Navbar = () => {
               <button
                 className={`flex items-center gap-1 px-4 py-2 text-sm font-bold transition-all ${activeMenu === "logistics" ? "text-orange-600" : "text-slate-600"}`}
               >
-                Logistics{" "}
+                Logistics Hub
                 <ChevronDown
                   size={14}
                   className={`transition-transform ${activeMenu === "logistics" ? "rotate-180" : ""}`}
@@ -179,18 +168,17 @@ const Navbar = () => {
                 {activeMenu === "logistics" && <MegaMenu items={logistics} />}
               </AnimatePresence>
             </div>
-
           </div>
 
-          {/* CTA */}
+          {/* CTA Section */}
           <div className="flex items-center gap-3">
-            <Link href="/contact" className="w-full">
+            <Link href="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="hidden md:flex bg-slate-900 text-white px-6 py-2.5 rounded-xl text-sm font-bold items-center gap-2 border border-slate-800 shadow-lg"
+                className="hidden md:flex bg-slate-900 text-white px-6 py-2.5 rounded-xl text-sm font-bold items-center gap-2 border border-slate-800 shadow-lg hover:bg-orange-600 transition-colors"
               >
-                Reach Us <Phone size={16} />
+                Book Now <Phone size={16} />
               </motion.button>
             </Link>
             <button
@@ -220,66 +208,35 @@ const Navbar = () => {
                 className="absolute top-full left-4 right-4 mt-3 bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 lg:hidden z-[100] overflow-hidden"
               >
                 <div className="p-6 max-h-[80vh] overflow-y-auto space-y-6">
-                  {/* Primary Grid */}
                   <div className="grid grid-cols-2 gap-3">
-                    <MobileBento
-                      href="/"
-                      label="Home"
-                      icon={<MapPin size={20} />}
-                    />
-                    <MobileBento
-                      href="/about"
-                      label="About"
-                      icon={<Users size={20} />}
-                    />
+                    <MobileBento href="/" label="Home" icon={<MapPin size={20} />} />
+                    <MobileBento href="/about" label="About" icon={<Briefcase size={20} />} />
                   </div>
 
-                  {/* Accordions */}
                   <div className="space-y-3">
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest px-2">
-                      Solutions
+                      Enterprise Solutions
                     </p>
                     <MobileAccordion
                       label="Travel Services"
                       icon={<Car size={18} />}
                       items={services}
                       isOpen={expandedSection === "s"}
-                      onClick={() =>
-                        setExpandedSection(expandedSection === "s" ? null : "s")
-                      }
+                      onClick={() => setExpandedSection(expandedSection === "s" ? null : "s")}
                     />
                     <MobileAccordion
                       label="Logistics Hub"
                       icon={<Truck size={18} />}
                       items={logistics}
                       isOpen={expandedSection === "l"}
-                      onClick={() =>
-                        setExpandedSection(expandedSection === "l" ? null : "l")
-                      }
+                      onClick={() => setExpandedSection(expandedSection === "l" ? null : "l")}
                     />
                   </div>
 
-                  {/* Secondary Grid */}
-                  <div className="grid grid-cols-2 gap-3 hidden">
-                    <MobileBento
-                      href="/journey"
-                      label="journey"
-                      icon={<BookOpen size={20} />}
-                    />
-                    <MobileBento
-                      href="/clients"
-                      label="Clients"
-                      icon={<ImageIcon size={20} />}
-                    />
-                  </div>
-
-                  <Link href="/contact" className="w-full">
-                    <button className="w-full bg-slate-900 text-white py-4 rounded-2xl font-black text-sm shadow-xl flex items-center justify-center gap-3 active:scale-95 transition-transform group">
-                      Get in Touch
-                      <Phone
-                        size={18}
-                        className="group-hover:rotate-12 transition-transform"
-                      />
+                  <Link href="/contact" className="w-full block">
+                    <button className="w-full bg-slate-900 text-white py-4 rounded-2xl font-black text-sm shadow-xl flex items-center justify-center gap-3 active:scale-95 transition-transform">
+                      Contact Sales
+                      <Phone size={18} />
                     </button>
                   </Link>
                 </div>
@@ -295,12 +252,12 @@ const Navbar = () => {
 // --- Sub-components ---
 
 const NavLink = ({ href, children }) => (
-  <a
+  <Link
     href={href}
     className="px-4 py-2 text-sm font-bold text-slate-600 hover:text-orange-600 transition-colors"
   >
     {children}
-  </a>
+  </Link>
 );
 
 const MegaMenu = ({ items }) => (
@@ -308,10 +265,10 @@ const MegaMenu = ({ items }) => (
     initial={{ opacity: 0, y: 15, scale: 0.95 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     exit={{ opacity: 0, y: 15, scale: 0.95 }}
-    className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[500px] bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 grid grid-cols-2 gap-4"
+    className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[550px] bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 grid grid-cols-2 gap-4"
   >
     {items.map((item) => (
-      <a
+      <Link
         key={item.name}
         href={`/${item.link}`}
         className="group p-4 rounded-2xl hover:bg-orange-50 transition-all border border-transparent hover:border-orange-100"
@@ -321,13 +278,13 @@ const MegaMenu = ({ items }) => (
         </div>
         <div className="font-bold text-slate-900 text-sm">{item.name}</div>
         <div className="text-[11px] text-slate-400 mt-1">{item.desc}</div>
-      </a>
+      </Link>
     ))}
   </motion.div>
 );
 
 const MobileBento = ({ href, label, icon }) => (
-  <a
+  <Link
     href={href}
     className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 group active:bg-orange-50"
   >
@@ -337,33 +294,21 @@ const MobileBento = ({ href, label, icon }) => (
     <span className="text-xs font-black text-slate-900 uppercase tracking-tight">
       {label}
     </span>
-  </a>
+  </Link>
 );
 
 const MobileAccordion = ({ label, icon, isOpen, onClick, items }) => (
-  <div
-    className={`rounded-2xl border transition-all ${isOpen ? "bg-orange-50/50 border-orange-100" : "bg-white border-slate-100"}`}
-  >
-    <button
-      onClick={onClick}
-      className="w-full flex justify-between items-center p-4"
-    >
+  <div className={`rounded-2xl border transition-all ${isOpen ? "bg-orange-50/50 border-orange-100" : "bg-white border-slate-100"}`}>
+    <button onClick={onClick} className="w-full flex justify-between items-center p-4">
       <div className="flex items-center gap-3">
-        <div
-          className={`p-2 rounded-xl ${isOpen ? "bg-orange-600 text-white" : "bg-slate-100 text-slate-400"}`}
-        >
+        <div className={`p-2 rounded-xl ${isOpen ? "bg-orange-600 text-white" : "bg-slate-100 text-slate-400"}`}>
           {icon}
         </div>
-        <span
-          className={`font-bold text-sm ${isOpen ? "text-orange-900" : "text-slate-700"}`}
-        >
+        <span className={`font-bold text-sm ${isOpen ? "text-orange-900" : "text-slate-700"}`}>
           {label}
         </span>
       </div>
-      <ChevronDown
-        size={18}
-        className={`transition-transform duration-300 ${isOpen ? "rotate-180 text-orange-600" : "text-slate-300"}`}
-      />
+      <ChevronDown size={18} className={`transition-transform duration-300 ${isOpen ? "rotate-180 text-orange-600" : "text-slate-300"}`} />
     </button>
     <AnimatePresence>
       {isOpen && (
@@ -375,21 +320,17 @@ const MobileAccordion = ({ label, icon, isOpen, onClick, items }) => (
         >
           <div className="px-4 pb-4 space-y-2">
             {items.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={`/${item.link}`}
                 className="flex items-center gap-4 p-3 rounded-xl bg-white border border-slate-50 shadow-sm"
               >
-                <div className="text-orange-600 bg-orange-50 p-2 rounded-lg">
-                  {item.icon}
-                </div>
+                <div className="text-orange-600 bg-orange-50 p-2 rounded-lg">{item.icon}</div>
                 <div>
-                  <div className="text-[13px] font-bold text-slate-800">
-                    {item.name}
-                  </div>
+                  <div className="text-[13px] font-bold text-slate-800">{item.name}</div>
                   <div className="text-[10px] text-slate-400">{item.desc}</div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </motion.div>

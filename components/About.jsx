@@ -20,7 +20,7 @@ const About = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow">
               <img
-                src="/dc93600e-ba06-4e0e-a1df-1e0bfb88488a.jpg"
+                src="https://www.tripkartz.com/wp-content/themes/tripkartz-theme/assets/who-we-are.webp"
                 alt="Cabs&logistics cabs"
                 className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -32,13 +32,13 @@ const About = () => {
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="absolute -bottom-6 -right-0 md:right-10 bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100 flex items-center gap-4"
+              className="absolute -bottom-6 -right-0 md:right-10 bg-white p-6 rounded-[2.5rem] shadow-sm border border-slate-100 flex items-center gap-4 hidden"
             >
               <div className="h-14 w-14 bg-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-200">
                 <TrendingUp size={28} />
               </div>
               <div>
-                <div className="text-2xl font-black  tracking-tighter text-slate-900">
+                <div className="text-2xl font-black  tracking-tighter text-slate-900 ">
                   ₹1.2 Billion
                 </div>
                 <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
@@ -85,7 +85,7 @@ const About = () => {
                   icon={<MapPin size={16} />}
                   text="Pan-India Presence"
                 />
-                <InfoChip icon={<UsersIcon />} text="300+ Dedicated Staff" />
+                <InfoChip icon={<UsersIcon />} text="50+ Dedicated Staff" />
                 <InfoChip
                   icon={<ShieldCheck size={16} />}
                   text="Corporate Excellence"

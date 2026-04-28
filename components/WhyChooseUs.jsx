@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   const pillars = [
     {
       id: "01",
-      title: "Two Decades of Experience",
+      title: "5+ of Experience",
       desc: "Since 2020, we have adapted to evolving enterprise needs, establishing GGV as a leader in corporate mobility.",
       icon: <Shield size={18} className="text-orange-600" />,
       img: "/why/01.avif",
@@ -63,12 +63,12 @@ const WhyChooseUs = () => {
           >
             <span className="h-[1px] w-8 bg-orange-600" />
             <span className="text-orange-600 font-bold uppercase tracking-[4px] text-[10px]">
-              Solutions
+              Why GGV
             </span>
             <span className="h-[1px] w-8 bg-orange-600" />
           </motion.div>
           <h2 className="text-3xl md:text-3xl font-black tracking-tight uppercase text-slate-900">
-            Our <span className="text-orange-600">Services</span>
+            Why Customers <span className="text-orange-600">Choose Us</span>
           </h2>
         </div>
 

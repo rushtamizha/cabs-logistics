@@ -13,7 +13,7 @@ const serif = Playfair_Display({
 // Clean, Modern Sans for Professional Body Text
 const sans = Source_Sans_3({ 
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--",
   weight: ["400", "500", "600"],
 });
 
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${serif.variable} ${sans.variable} font-sans antialiased text-slate-900 bg-white`}>
+      <body className={`${serif.variable} ${sans.variable}  antialiased text-slate-900 bg-white`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
