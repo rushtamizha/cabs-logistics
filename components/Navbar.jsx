@@ -44,53 +44,53 @@ const Navbar = () => {
       name: "Premium Car Rentals",
       desc: "Luxury & Executive VIP fleets",
       icon: <Car size={20} />,
-      link: "services#premium",
+      link: "services",
     },
     {
       name: "Employee Transport",
       desc: "24/7 Corporate commuting",
       icon: <Users size={20} />,
-      link: "services#corporate",
+      link: "services",
     },
     {
       name: "Event & Wedding",
       desc: "Tailor-made bridal fleets",
       icon: <Heart size={20} />,
-      link: "services#events",
+      link: "services",
     },
     {
       name: "Airport & Spot Rental",
       desc: "Punctual professional travel",
       icon: <Plane size={20} />,
-      link: "services#airport",
+      link: "services",
     },
   ];
 
   const logistics = [
-    {
-      name: "Freight & Container",
-      desc: "Industrial safe solutions",
-      icon: <Truck size={20} />,
-      link: "logistics",
-    },
-    {
-      name: "Customized Plans",
-      desc: "Flexible client requirements",
-      icon: <Package size={20} />,
-      link: "logistics",
-    },
+    // {
+    //   name: "Freight & Container",
+    //   desc: "Industrial safe solutions",
+    //   icon: <Truck size={20} />,
+    //   link: "logistics",
+    // },
+    // {
+    //   name: "Customized Plans",
+    //   desc: "Flexible client requirements",
+    //   icon: <Package size={20} />,
+    //   link: "logistics",
+    // },
     {
       name: "Safe Logistics",
       desc: "Reliable corporate freight",
       icon: <ShieldCheck size={20} />,
       link: "logistics",
     },
-    {
-      name: "PAN India Network",
-      desc: "Across Tier-3 cities",
-      icon: <Globe size={20} />,
-      link: "logistics",
-    },
+    // {
+    //   name: "PAN India Network",
+    //   desc: "Across Tier-3 cities",
+    //   icon: <Globe size={20} />,
+    //   link: "logistics",
+    // },
   ];
 
   return (
@@ -139,7 +139,7 @@ const Navbar = () => {
               <button
                 className={`flex items-center gap-1 px-4 py-2 text-sm font-bold transition-all ${activeMenu === "services" ? "text-orange-600" : "text-slate-600"}`}
               >
-                Travel Solutions
+                Services
                 <ChevronDown
                   size={14}
                   className={`transition-transform ${activeMenu === "services" ? "rotate-180" : ""}`}

@@ -44,7 +44,6 @@ const Hero = () => {
         speed={1500}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop={true}
-        pagination={{ clickable: true }}
         className="h-full w-full"
       >
         {slides.map((slide, index) => {

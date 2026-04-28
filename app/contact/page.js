@@ -106,10 +106,11 @@ Tamilnadu, 635201"
                     className="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-orange-500 transition-colors font-bold text-slate-900 appearance-none"
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
                   >
-                    <option>Premium Car Rental</option>
-                    <option>Bus & Shuttle</option>
-                    <option>Logistics Hub</option>
-                    <option>Corporate Supply</option>
+                    <option>Employee Transportation Services (ETS)</option>
+                    <option>Corporate Car Rentals</option>
+                    <option>Airport Transfers</option>
+                    <option>Outstation Car Rental</option>
+                    <option>Premium & Executive Car Rentals</option>
                   </select>
                 </div>
 
