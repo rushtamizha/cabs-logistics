@@ -2,6 +2,7 @@ import "./globals.css";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactPopup from "@/components/ContactPopup";
 
 const serif = Playfair_Display({ 
   subsets: ["latin"],
@@ -141,6 +142,7 @@ export default function RootLayout({ children }) {
       <body className={`${serif.variable} ${sans.variable} font-sans antialiased text-slate-900 bg-white`}>
         <Navbar />
         <main>{children}</main>
+        <ContactPopup/>
         <Footer />
       </body>
     </html>
