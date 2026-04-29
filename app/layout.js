@@ -16,6 +16,9 @@ const sans = Source_Sans_3({
 });
 
 export const metadata = {
+  // 1. Metadata Base (Crucial for resolving social image URLs)
+  metadataBase: new URL("https://ggvcabs.co.in"),
+
   title: {
     default: "GGV Cabs & Logistics | Driving Success Together",
     template: "%s | GGV Cabs & Logistics",
@@ -34,6 +37,8 @@ export const metadata = {
     icon: "/logo.jpg",
     apple: "/logo.jpg",
   },
+
+  // 2. Open Graph (Facebook, WhatsApp, LinkedIn)
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -41,6 +46,27 @@ export const metadata = {
     title: "GGV Cabs & Logistics | Premium Mobility & Logistics Solutions",
     description: "200+ fleet. 15+ years expertise. Seamless corporate travel and industrial logistics across Bangalore, Chennai, and Pan-India.",
     siteName: "GGV Cabs & Logistics",
+    images: [
+      {
+        url: "/og-image.jpg", // Create a 1200x630 image for best results
+        width: 1200,
+        height: 630,
+        alt: "GGV Cabs & Logistics - Driving Success Together",
+      },
+    ],
+  },
+
+  // 3. Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "GGV Cabs & Logistics | Pan-India Mobility",
+    description: "Premium Corporate Car Rentals & Industrial Logistics Solutions. Serving major hubs across India.",
+    images: ["/d0c7bb52-1e30-49f0-931c-de6f656d3c18.jpg"], // Same as OG image
+  },
+
+  // 4. Verification for Search Consoles
+  verification: {
+    google: "UMR8sKo5AXYzve46ZfkN_vRJg13DUX4gbai1klSjM", // Add your code if you have one
   },
 };
 
