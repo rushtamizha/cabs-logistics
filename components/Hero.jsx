@@ -48,7 +48,7 @@ const Hero = () => {
       >
         {slides.map((slide, index) => {
           const waMessage = `Hello GGV! I'm interested in your ${slide.title.join(' ')} services.`;
-          const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+          const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIcomponents(waMessage)}`;
 
           return (
             <SwiperSlide key={index} className="relative overflow-hidden">

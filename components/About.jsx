@@ -74,9 +74,7 @@ const About = () => {
               className="space-y-6 text-slate-600"
             >
               <p className="leading-relaxed font-medium">
-                With *5+ years of industry expertise*, Cabs&logistics Smart Mobility Private
-                Limited is a leading provider of integrated transportation
-                solutions for the corporate sector.
+                Since 2020, GGV Cabs & Logistics has been redefining mobility and logistics solutions with a strong commitment to reliability, safety, innovation, and operational excellence.
               </p>
 
               {/* Mini Bento Grid for Info */}

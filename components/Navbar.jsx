@@ -17,6 +17,7 @@ import {
   Phone,
   Briefcase,
   Globe,
+  Notebook,
 } from "lucide-react";
 
 const Navbar = () => {
@@ -168,6 +169,8 @@ const Navbar = () => {
                 {activeMenu === "logistics" && <MegaMenu items={logistics} />}
               </AnimatePresence>
             </div>
+            <NavLink href="/clients">Clients</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
           </div>
 
           {/* CTA Section */}
@@ -231,6 +234,10 @@ const Navbar = () => {
                       isOpen={expandedSection === "l"}
                       onClick={() => setExpandedSection(expandedSection === "l" ? null : "l")}
                     />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <MobileBento href="/clients" label="Clients" icon={<Users size={20} />} />
+                    <MobileBento href="/blog" label="Blog" icon={<Notebook size={20} />} />
                   </div>
 
                   <Link href="/contact" className="w-full block">

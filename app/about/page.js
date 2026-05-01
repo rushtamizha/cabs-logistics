@@ -1,21 +1,19 @@
 import React from "react";
 import Purpose from "@/components/Purpose";
-import Leadership from "@/components/Leadership";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 
-// Metadata for SEO - Essential for Enterprise sites
 export const metadata = {
-  title: "About Us | Cabs&logistics Logistics",
-  description: "Learn about Cabs&logistics's mission to provide automated, end-to-end corporate transport solutions across India.",
+  title: "About Us | GGV Cabs & Logistics",
+  description: "Learn about GGV Cabs & Logistics' mission to provide safe, scalable, and sustainable corporate transport solutions across India.",
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       
-      {/* 1. Hero Section (Introduction) */}
+      {/* 1. Hero Section */}
       <section className="relative pt-32 pb-20 bg-slate-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
@@ -29,33 +27,23 @@ export default function AboutPage() {
               Since 2020.
             </h1>
             <p className="text-slate-400 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
-              Moving
-Corporate India
-Since 2020
-From our roots in Tamil Nadu to a pan-India network, we combine two.
+              Redefining mobility through innovation and operational excellence. 
+              From our roots in Tamil Nadu to a pan-India network, we deliver trust, safety, and excellence.
             </p>
           </div>
         </div>
 
-        {/* Decorative Grid Background */}
         <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#2563eb 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }} />
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#f97316 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }} />
         </div>
       </section>
 
-      {/* 2. Strategic Core (Vision & Mission) */}
+      {/* 2. Strategic Core (Updated with Vision & Mission) */}
       <Purpose />
 
-      {/* 3. The Pillars (Why Choose Us) */}
       <WhyChooseUs />
-
-      {/* 5. Client Testimonials */}
       <Testimonials />
-
-      {/* 6. FAQ Section */}
       <FAQ />
-
-      
     </main>
   );
 }
